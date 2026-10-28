@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head > 
+   <meta charset ="utf-8">
+   <title>Faculty Programming Work 2026</title>
+
+</head>
+<body>
+   
+   <!--Header Section with event Name And Tagline -->
+   <header>
+        <h1>Faculty Programming Workshop 2026 </h1>
+		<p>Enhancing Coding Skills and Building Innovative Solution </p>
+   </header>
+		
+		<!--Navigation Bar With Internet Links -->
+		<nav>
+		    <a href="#about">About the Event </a> |
+			<a href="#schedule">EventSchedule </a> |
+			<a href="#register">Registration </a>
+	    </nav>
+		<main>
+		     <!--Section 1: About the Event  -->
+			 <section id="about">
+			     <h2>About the Event</h2> 
+				 
+				 <article>
+				   <h3>Featured Speaker: Dr. Ahmad Razak</h3>
+                   <p>Dr. Ahmad is a Senior Web Developer with over 10 years of experience in modern web technologies and software engineering.</p>
+                </article>
+				
+				<article>
+				   <h3> Workshop Highlight</h3>
+				   <p>Participants will learn the fundamentals of semantic HTML structure, accessibility standards, and modern web application workflows.</p>
+				</article>
+				
+			</section>
+			<!-- Section 2: Event Schedule -->
+             <!-- Section 2: Event Schedule -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Venue</th>
+                        <th>Person in Charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00 AM - 09:00 AM</td>
+                        <td>Participant Registration</td>
+                        <td>FKKM Foyer</td>
+                        <td>Secretariat</td>
+                    </tr>
+                    <tr>
+                        <td>09:00 AM - 10:30 AM</td>
+                        <td>Opening Keynote &amp; HTML Basics</td>
+                        <!-- rowspan used: Venue is shared between morning sessions -->
+                        <td rowspan="2">Lab 1</td>
+                        <td>Dr. Ahmad Razak</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM - 12:30 PM</td>
+                        <td>Hands-on Coding Session 1</td>
+                        <td>En. Hafiz</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 PM - 02:00 PM</td>
+                        <!-- colspan used: Lunch break spans Activity, Venue, and Person in Charge -->
+                        <td colspan="3">Lunch Break &amp; Networking</td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM - 04:00 PM</td>
+                        <td>Hands-on Coding Session 2</td>
+                        <td>Lab 2</td>
+                        <td>Dr. Ahmad Razak</td>
+                    </tr>
+                    <tr>
+                        <td>04:00 PM - 05:00 PM</td>
+                        <td>Closing &amp; Certificate Presentation</td>
+                        <td>Main Hall</td>
+                        <td>Organising Committee</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 3: Registration Form -->
+        <section id="register">
+            <h2>Registration</h2>
+            <form action="register.html" method="post">
+                
+                <!-- Full Name Field -->
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <!-- Matric Number Field -->
+                <p>
+                    <label for="matric">Matric Number:</label><br>
+                    <input type="text" id="matric" name="matric" required>
+                </p>
+
+                <!-- Email Field -->
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <!-- Year of Study Radio Buttons -->
+                <p>Year of Study:<br>
+                    <input type="radio" id="year1" name="year_of_study" value="Year 1" required>
+                    <label for="year1">Year 1</label><br>
+                    
+                    <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                    <label for="year2">Year 2</label><br>
+                    
+                    <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                    <label for="year3">Year 3</label><br>
+                    
+                    <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                    <label for="year4">Year 4</label>
+                </p>
+
+                <!-- Preferred Sessions Checkboxes -->
+                <p>Sessions to Join:<br>
+                    <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                    <label for="session1">Opening Keynote</label><br>
+                    
+                    <input type="checkbox" id="session2" name="sessions" value="Lab1">
+                    <label for="session2">Hands-on Session 1</label><br>
+                    
+                    <input type="checkbox" id="session3" name="sessions" value="Lab2">
+                    <label for="session3">Hands-on Session 2</label>
+                </p>
+
+                <!-- Programme / Faculty Drop-down -->
+                <p>
+                    <label for="programme">Programme / Faculty:</label><br>
+                    <select id="programme" name="programme" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="CS">Bachelor of Computer Science</option>
+                        <option value="SE">Software Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="DS">Data Science</option>
+                    </select>
+                </p>
+
+                <!-- Submit Button -->
+                <p>
+                    <input type="submit" value="Register Now">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics</p>
+        <p>&copy; 2026 Faculty Event Organising Committee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
