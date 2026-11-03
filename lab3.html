@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Interactive Contact Form & Calculator</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div>
+        <h1>My Website Title</h1>
+        <span>Welcome to our site — Providing easy interactive solutions!</span>
+    </div>
+
+    <!-- Content Section -->
+    <div>
+        <!-- Contact Form using HTML5 Elements -->
+        <div>
+            <h2>Contact Us</h2>
+            <form action="#">
+                <!-- Email input for user contact -->
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Date input for the user's preferred contact date -->
+                <label for="contact-date">Preferred Contact Date:</label><br>
+                <input type="date" id="contact-date" name="contact-date"><br><br>
+
+                <!-- Range slider for user satisfaction level -->
+                <label for="satisfaction">Satisfaction Level:</label><br>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Inline Calculator -->
+        <div>
+            <h2>Inline Addition Calculator</h2>
+            <form oninput="result.value = parseFloat(x.value || 0) + parseFloat(y.value || 0)">
+                <!-- Provide two <input> fields where users can enter numbers -->
+                <label for="x">Number 1:</label>
+                <input type="number" id="x" name="x" value="0">
+                
+                +
+                
+                <label for="y">Number 2:</label>
+                <input type="number" id="y" name="y" value="0">
+                
+                =
+                
+                <!-- Use the <output> element to show the sum of the two numbers dynamically -->
+                <output name="result" for="x y">0</output>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div>
+        <footer>
+            <p>&copy; 2026 Interactive Web Lab. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
