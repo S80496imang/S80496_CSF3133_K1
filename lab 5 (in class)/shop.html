@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bookstore</title>
+
+  <!-- Fixed & Extended Google Fonts (Merriweather for headings, Roboto for body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fixed rel="stylesheet" -->
+  <link rel="stylesheet" href="shop.css">
+
+  <!-- Moved <style> from <body> into <head> -->
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Identified Errors in Original Code:
+    Error 1 (shop.html, Line 5): Google Fonts URL used '/css?family=Roboto:wght@400;700' instead of '/css2?family=Roboto:wght@400;700'.
+    Error 2 (shop.html, Line 6): Attribute rel="stylesheets" is misspelled; must be rel="stylesheet".
+    Error 3 (shop.html, Line 10): <style> element was placed inside <body> instead of <head>.
+    Error 4 (shop.html, Line 18): Inline CSS used '=' instead of ':' in style="color=#1B4F72;".
+    Error 5 (shop.html, Line 20): Table id was "product" instead of "products", mismatching the CSS selector #products.
+    Error 6 (shop.css, Line 2): Font family 'Robotto' is misspelled; should be 'Roboto'.
+    Error 7 (shop.css, Line 4): 'no repeat' is missing a hyphen; must be 'no-repeat'.
+    Error 8 (shop.css, Line 5): Property 'bacground-position' is misspelled; must be 'background-position'.
+    Error 9 (shop.css, Line 18): 'display: inline' should be 'display: block' so link padding renders properly.
+    Error 10 (shop.css, Line 23): Selector 'li:a:hover' has an extra colon; must be 'li a:hover'.
+    Error 11 (shop.css, Line 27): Value 'collapsed' is invalid; must be 'border-collapse: collapse'.
+    Error 12 (shop.css, Line 34): ':nth-child(2)' only highlights row 2; must be ':nth-child(even)'.
+    Error 13 (shop.css, Line 37): Pseudo-class ':hovered' is invalid; must be ':hover'.
+    Error 14 (shop.css, Line 45): Missing semicolon after 'background-color: #f1f1f1', breaking the next rule.
+  -->
+<!-- Added <header> structure -->
+  <header>
+    <h1>Campus Bookstore</h1>
+  </header>
+
+  <!-- Added <nav> structure and .active class -->
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Added <main> structure -->
+  <main>
+    <p>Textbooks, stationery and more for every student.</p>
+
+    <table id="products">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th class="price">Price (RM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Design Basics</td>
+          <td>Textbook</td>
+          <td class="price">45.00</td>
+        </tr>
+        <tr>
+          <td>A4 Notebook</td>
+          <td>Stationery</td>
+          <td class="price">6.50</td>
+        </tr>
+        <tr>
+          <td>USB Drive 32GB</td>
+          <td>Gadget</td>
+          <td class="price">25.00</td>
+        </tr>
+        <tr>
+          <td>Highlighter Set</td>
+          <td>Stationery</td>
+          <td class="price">9.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>&copy; 2026 Campus Bookstore</footer>
+</body>
+</html>
