@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Header introducing the quiz -->
+    <header>
+      <h1>Web-Based Interface Design Quiz</h1>
+      <p>Test your knowledge of HTML, CSS, and JavaScript. You have 15 seconds per question!</p>
+    </header>
+
+    <main>
+      <!-- Start Screen -->
+      <section id="start-section">
+        <button id="start-btn" class="btn primary-btn">Start Quiz</button>
+      </section>
+
+      <!-- Section to display questions, answer options, and timer -->
+      <section id="quiz-section" class="hidden">
+        <div class="status-bar">
+          <span id="question-progress">Question 1 of 5</span>
+          <span id="timer">Time Left: 15s</span>
+        </div>
+
+        <h2 id="question-text">Question goes here</h2>
+        <div id="options-container" class="options-grid"></div>
+
+        <!-- Section to show feedback (correct/incorrect) after each answer -->
+        <section id="feedback-section" class="feedback hidden"></section>
+
+        <!-- Button to submit answers and navigate between questions -->
+        <div class="controls">
+          <button id="submit-btn" class="btn primary-btn" disabled>Submit Answer</button>
+          <button id="next-btn" class="btn secondary-btn hidden">Next Question</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer to display the user's score after finishing the quiz -->
+    <footer id="score-footer" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="final-score">Your Score: 0 / 5</p>
+      <button id="restart-btn" class="btn primary-btn">Restart Quiz</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
