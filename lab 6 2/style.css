@@ -1,0 +1,103 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background-color: #164b6e;
+  color: #ffffff;
+  padding: 18px 24px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Button styling and hover state */
+button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  background-color: #2575b8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #185487;
+}
+
+/* Arena and fixed-size choice images */
+.arena {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 16px;
+}
+
+.choice-card {
+  text-align: center;
+}
+
+.choice-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 6px;
+  background-color: #fafbfc;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 18px;
+  color: #555;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* History table styling */
+#history {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+}
+
+#history th,
+#history td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
+}
+
+#history th {
+  background-color: #164b6e;
+  color: #ffffff;
+}
+
+#history tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-top: 12px;
+}
